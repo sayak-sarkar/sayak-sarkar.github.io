@@ -117,65 +117,147 @@ nav a:hover {
 
 /* 5. Media Queries */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 	1280px) {
 	body > * {
-		width:		100%;
+		margin-top:	5%;
+		width:		80%;
 		padding:	0 1rem;
 	}
 	h1 {	padding-top:	20%; }
+
+	hr{
+		margin-bottom:	-20px;
+		margin-top:	-40px;
+	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 	1024px) {
 	body > * {
-		width:		100%;
+		margin-top:	5%;
+		width:		80%;
 		padding:	0 1rem;
 	}
 	h1 {	padding-top:	20%; }
+
+	hr{
+		margin-bottom:	-20px;
+		margin-top:	-40px;
+	}
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 	800px) {
 	body > * {
 		width:		100%;
 		padding:	0 1rem;
 	}
-	h1 {	padding-top:	17%; }
+
+	h1 {	padding-top:	25%; }
+
+	hr {	
+		margin-top:	-30px;
+		margin-bottom:	-20px;
+	}
+
+	p {	margin-top: 	-32px; }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 	768px) {
 	body > * {
+
 		width:		100%;
 		padding:	0 1rem;
 	}
-	h1 {	padding-top:	16%; }
+
+	h1 {	padding-top:	25%; }
+
+	hr {
+		margin-top:	-30px;
+		margin-bottom:	-20px;
+	}
+
+	p {	margin-top:	-32px; }
+
+	nav{	margin-top:	5%;}
 }
 
-@media screen and (max-width: 640px) {
-	h1 {	padding-top:	8%; }
-	header { font-size: 3rem; }
-	nav { font-size: 1.2rem; }
+@media screen and (max-width:	640px) {
+	body {	
+		margin-top:	-30px;
+		margin-bottom:	-30px;
+	}
+
 	footer > * {
 		width:		100%;
 		display:	block;
 	}
-	footer div, footer h6 { text-align: center; }
+
+	footer div, footer h6 {
+		text-align: 	center; 
+	}
+
+	h1 {	padding-top:	5%; }
+
+	header{	font-size:	2.25rem; }
+
+	hr {
+		margin-top:	-30px;
+		margin-bottom:	-30px;
+	}
+
+	nav { 	font-size: 	1.2rem; }
+
+	p {
+		margin-top:	-34px;
+		font-size: 	2rem;
+	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 	600px) {
+	body {	margin-top:	0%;}
+
 	h1 {	padding-top:	6%; }
-	header { font-size: 3rem; }
-	nav { font-size: 1.2rem; }
+
+	hr {
+		margin-top:	-30px;
+		margin-bottom:	-20px;
+	}
+
+	p {
+		margin-top:	-55px;
+		font-size:	2.5rem;
+	}
+
+	header { font-size:	3rem; }
+
+	nav { font-size:	1.2rem; }
+
 	footer > * {
 		width:		100%;
 		display:	block;
 	}
-	footer div, footer h6 { text-align: center; }
+
+	footer div, footer h6 {
+		text-align: 	center; 
+	}
 }
 
-@media screen and (max-width: 512px) {
-	h1 {	padding-top:	0%; }
-	header { font-size: 2.5rem; }
-	nav { display: block; }
+@media screen and (max-width: 	512px) {
+	body {	margin-top:	0%;}
+
+	h1 {
+		font-size:	4rem;
+		padding-top:	10%; 
+	}
+
+	header { font-size: 	2.5rem; }
+
+	hr {
+		margin-top:	-5px;
+		margin-bottom:	0px;
+	}
+
+	nav { 	display: 	block; }
+
 	nav a {
 		width:		100%;
 		display:	block;
@@ -188,15 +270,87 @@ nav a:hover {
 		border-color:	#eee #ccc #bbb;
 		border-radius:	0;
 	}
-	nav a:first-child { border-radius: 6px 6px 0 0; }
-	nav a:last-child { border-radius: 0 0 6px 6px; }
+
+	nav a:first-child { 
+		border-radius:	6px 6px 0 0;
+	}
+
+	nav a:last-child {
+		border-radius:	0 0 6px 6px;
+	}
+
+	p {
+		margin-top:	-30px;
+		font-size: 	2rem;
+	}
 }
 
-@media screen and (max-width: 400px) {
-	h1 {	padding-top:	0%; }
-	header { font-size: 2rem; }
-	img { float: none; width: 50%;}
-	nav { font-size: 1rem; }
-	#copyleft { font-size: 0.5rem; }
+@media screen and (max-width: 	400px) {
+	body {	margin-top:	0%;}
+
+	h1 {	margin-top:	-10px; }
+
+	header{	font-size: 	2rem; }
+
+	hr {	margin-top:	-20px;}
+
+	img {
+		float:		none;
+		width:		50%;
+	}
+
+	nav { 	font-size:	1rem; }
+
+	p {	margin-top:	-30px; }
+}
+
+@media screen and (max-width: 	360px) {
+	body {	margin-top:	15px;}
+
+	h1 {	margin-top:	-45px; }
+
+	header{	font-size:	2rem; }
+
+	hr {
+		margin-top:	-20px;
+		margin-bottom:	-10px;
+	}
+
+	img { 
+		float:		none;
+		width:		50%;
+	}
+
+	nav {	font-size:	1rem; }
+
+	p {
+		font-size:	1.5rem;
+		margin-top:	-45px; 
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {	margin-top:	40px;}
+
+	h1 {	margin-top:	-30px; }
+
+	header { font-size:	1.8rem; }
+
+	hr {
+		margin-top:	0px;
+		margin-bottom:	0px;
+	}
+
+	img {
+		float: 		none;
+		width: 		50%;
+	}
+
+	nav {	font-size:	1rem; }
+
+	p {
+		font-size:	1.4rem;
+		margin-top:	-30px;
+	}
 }
 
