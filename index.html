@@ -1,44 +1,65 @@
 <!doctype html>
 <html lang="en">
 	<head>
-    
-		<!-- le meta tags -->
+    		<!-- le meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-    
+ 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+   
 		<!-- le title -->
-		<title>The Bugsmith's Web Abode!</title>
+		<title id="title">Welcome to the Bugsmith's Web Abode!</title>
     
-		<!-- le favicon-->
-		<link rel="icon" href="images/avatar-square.png" type="image/png">
+		<!-- le favicon -->
+		<link rel="icon" href="images/avatar-square.png">
     
 		<!-- le stylesheets -->
 		<link rel="stylesheet" href="stylesheets/style.css"/>
-
 	</head>
 
 	<body>
+		<!-- le header stuff -->
 		<header>
+
+			<!-- le language selection menu -->
+			<div id="language-selector">
+				<span id="language">Language:</span>
+				<select autocomplete="off">
+					<option onclick="localize('en')" selected>English</option>
+					<option onclick="localize('bn')">বাংলা</option>
+					<option onclick="localize('hi')">हिन्दी </option>
+				</select>
+			</div>
+
+
+			<!-- le me looking handsome -->
 			<img src="images/avatar.svg"/>
-			<h1>Sayak Sarkar</h1>
-			<p>Yet another Pseudo-Geek</p>
+
+			<!-- le name and tagline -->
+			<h1 id="name">Sayak Sarkar</h1>
+			<p id="tagline">Yet another Pseudo-Geek!</p>
 			<hr/>
 		</header>
-			<nav>
-				<a class="fade" href="http://sayaksarkar.wordpress.com" target="_blank">Blog</a>
-				<a class="fade" href="http://in.linkedin.com/in/sayaksarkar" target="_blank">Career</a>
-				<a class="fade" href="https://github.com/sayak-sarkar" target="_blank">Laboratory</a>
-			</nav>
-		<script type="text/javascript">
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-			try {
-				var pageTracker = _gat._getTracker("UA-40145704-1");
-				pageTracker._trackPageview();
-			} catch(err) {}
-		</script>
+
+		<!-- le navigator menu -->
+		<nav>
+			<a id="blog" class="fade" href="http://sayaksarkar.wordpress.com/" target="_blank">Blog</a>
+			<a id="career" class="fade" href="http://in.linkedin.com/in/sayaksarkar/" target="_blank">Career</a>
+			<a id="laboratory" class="fade" href="https://github.com/sayak-sarkar/" target="_blank">Laboratory</a>
+		</nav>
 	</body>
+
+	<!-- le javascripts-->
+	<script src="javascripts/localize.js"></script>
+
+	<!-- le google analytics -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-40145704-1");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
 </html>
