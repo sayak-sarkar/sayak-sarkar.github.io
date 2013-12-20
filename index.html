@@ -26,10 +26,10 @@
 			<!-- le language selection menu -->
 			<div id="language-selector">
 				<span id="language">Language:</span>
-				<select autocomplete="off">
-					<option onclick="localize('en')" selected>English</option>
-					<option onclick="localize('bn')">বাংলা</option>
-					<option onclick="localize('hi')">हिन्दी </option>
+				<select autocomplete="off" onchange="localize(this.value)">
+					<option value="en" selected>English</option>
+					<option value="bn">বাংলা</option>
+					<option value="hi">हिन्दी </option>
 				</select>
 			</div>
 
